@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FindSpy</string>
+    <string name="findSpy">Find Spy</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="one">1</string>
 </resources>
