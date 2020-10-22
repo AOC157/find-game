@@ -41,7 +41,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.700"
-        app:layout_constraintVertical_bias="0.500"
+        app:layout_constraintVertical_bias="0.400"
         android:onClick="increasePlayer"/>
 
     <Button
@@ -54,7 +54,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.300"
-        app:layout_constraintVertical_bias="0.500"
+        app:layout_constraintVertical_bias="0.400"
         android:onClick="decreasePlayer"/>
 
     <TextView
@@ -80,7 +80,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.500"
-        app:layout_constraintVertical_bias="0.500"/>
+        app:layout_constraintVertical_bias="0.400"/>
 
     <Button
         android:layout_width="60dp"
@@ -92,7 +92,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.700"
-        app:layout_constraintVertical_bias="0.700"
+        app:layout_constraintVertical_bias="0.600"
         android:onClick="increaseSpy"/>
 
     <Button
@@ -105,7 +105,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.300"
-        app:layout_constraintVertical_bias="0.700"
+        app:layout_constraintVertical_bias="0.600"
         android:onClick="decreaseSpy"/>
 
     <Button
