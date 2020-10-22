@@ -4,4 +4,7 @@
     <string name="plus">+</string>
     <string name="minus">-</string>
     <string name="one">1</string>
+    <string name="player">Player</string>
+    <string name="spy">Spy</string>
+    <string name="start">START</string>
 </resources>
