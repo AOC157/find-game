@@ -2,6 +2,7 @@ package com.example.findspy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -46,5 +47,10 @@ public class StartActivity1 extends AppCompatActivity {
             return;
         }
         button.setText(String.valueOf(spyNumber));
+    }
+
+    public void displayPlaces(View view){
+        Intent intent = new Intent(StartActivity.this,PlacesActivity.class);
+        startActivity(intent);
     }
 }

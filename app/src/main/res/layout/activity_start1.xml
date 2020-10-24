@@ -144,7 +144,8 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.500"
-        app:layout_constraintVertical_bias="0.900"/>
+        app:layout_constraintVertical_bias="0.900"
+        android:onClick="displayPlaces"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
