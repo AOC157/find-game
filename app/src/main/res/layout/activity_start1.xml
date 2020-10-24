@@ -67,7 +67,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.500"
-        app:layout_constraintVertical_bias="0.520"/>
+        app:layout_constraintVertical_bias="0.510"/>
 
     <Button
         android:id="@+id/playerNumber"
@@ -133,6 +133,18 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.500"
-        app:layout_constraintVertical_bias="0.800"/>
+        app:layout_constraintVertical_bias="0.750" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/places"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintVertical_bias="0.900"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
