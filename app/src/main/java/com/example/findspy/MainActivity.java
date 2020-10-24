@@ -1,10 +1,15 @@
 package com.example.findspy;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import static java.lang.Thread.sleep;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,40 +17,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        startMainActivity();
     }
 
-    public void increasePlayer(View view){
-        Button button = (Button) findViewById(R.id.playerNumber);
-        int playerNumber = Integer.parseInt((String) button.getText()) + 1;
-        button.setText(String.valueOf(playerNumber));
-    }
-
-    public void decreasePlayer(View view){
-        Button button = (Button) findViewById(R.id.playerNumber);
-        int playerNumber = Integer.parseInt((String) button.getText()) - 1;
-        if(playerNumber < 1){
-            return;
-        }
-        button.setText(String.valueOf(playerNumber));
-    }
-
-    public void increaseSpy(View view){
-        Button button = (Button) findViewById(R.id.spyNumber);
-        Button playerButton = (Button) findViewById(R.id.playerNumber);
-        int spyNumber = Integer.parseInt((String) button.getText()) + 1;
-        if(spyNumber > Integer.parseInt((String) playerButton.getText())){
-            return;
-        }
-        button.setText(String.valueOf(spyNumber));
-    }
-
-    public void decreaseSpy(View view){
-        Button button = (Button) findViewById(R.id.spyNumber);
-        int spyNumber = Integer.parseInt((String) button.getText()) - 1;
-        if(spyNumber < 1){
-            return;
-        }
-        button.setText(String.valueOf(spyNumber));
+    private void startMainActivity() {
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(MainActivity.this,StartActivity1.class);
+                startActivity(intent);
+                finish();
+            }
+        };
+        Timer timer = new Timer();
+        timer.schedule(task,3000);
     }
 
 }
