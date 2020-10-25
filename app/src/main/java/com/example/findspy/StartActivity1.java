@@ -58,4 +58,9 @@ public class StartActivity1 extends AppCompatActivity {
         Intent intent = new Intent(StartActivity1.this,PlacesActivity.class);
         startActivity(intent);
     }
+
+    public void runGame(View view){
+        Intent intent = new Intent(StartActivity1.this,RunActivity.class);
+        startActivity(intent);
+    }
 }
