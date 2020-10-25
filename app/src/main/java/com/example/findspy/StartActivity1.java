@@ -50,7 +50,7 @@ public class StartActivity1 extends AppCompatActivity {
     }
 
     public void displayPlaces(View view){
-        Intent intent = new Intent(StartActivity.this,PlacesActivity.class);
+        Intent intent = new Intent(StartActivity1.this,PlacesActivity.class);
         startActivity(intent);
     }
 }
