@@ -27,6 +27,11 @@ public class StartActivity1 extends AppCompatActivity {
         if(playerNumber < 1){
             return;
         }
+        Button spyButton = (Button) findViewById(R.id.spyNumber);
+        int spyNumber = Integer.parseInt((String) spyButton.getText());
+        if(playerNumber < spyNumber){
+            spyButton.setText(String.valueOf(playerNumber));
+        }
         button.setText(String.valueOf(playerNumber));
     }
 
