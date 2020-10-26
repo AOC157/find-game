@@ -9,4 +9,5 @@
     <string name="start">START</string>
     <string name="places">Places</string>
     <string name="role">Tap to show your role</string>
+    <string name="hide">tap to hide</string>
 </resources>
