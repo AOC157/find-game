@@ -10,4 +10,6 @@
     <string name="places">Places</string>
     <string name="role">Tap to show your role</string>
     <string name="hide">tap to hide</string>
+    <string name="space">&#160;</string>
+    <string name="finish">Finish!</string>
 </resources>

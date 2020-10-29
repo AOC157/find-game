@@ -61,6 +61,8 @@ public class StartActivity1 extends AppCompatActivity {
 
     public void runGame(View view){
         Intent intent = new Intent(StartActivity1.this,RunActivity.class);
+        Button button = (Button) findViewById(R.id.playerNumber);
+        RunActivity.playerNumber = Integer.parseInt((String) button.getText());
         startActivity(intent);
     }
 }
