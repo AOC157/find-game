@@ -12,4 +12,21 @@
     <string name="hide">tap to hide</string>
     <string name="space">&#160;</string>
     <string name="finish">Finish!</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="gym">Gym</string>
+    <string name="airport">Airport</string>
+    <string name="supermarket">Supermarket</string>
+    <string name="school">School</string>
+    <string name="university">University</string>
+    <string name="bank">Bank</string>
+    <string name="cinema">Cinema</string>
+    <string name="library">Library</string>
+    <string name="busStop">Bus Stop</string>
+    <string name="postOffice">Post Office</string>
+    <string name="cafe">Cafe\'</string>
+    <string name="hospital">Hospital</string>
+    <string name="hotel">Hotel</string>
+    <string name="museum">Museum</string>
+    <string name="park">Park</string>
+    <string name="zoo">Zoo</string>
 </resources>
