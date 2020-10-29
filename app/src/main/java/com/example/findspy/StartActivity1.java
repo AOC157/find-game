@@ -61,8 +61,10 @@ public class StartActivity1 extends AppCompatActivity {
 
     public void runGame(View view){
         Intent intent = new Intent(StartActivity1.this,RunActivity.class);
-        Button button = (Button) findViewById(R.id.playerNumber);
-        RunActivity.playerNumber = Integer.parseInt((String) button.getText());
+        Button playerButton = (Button) findViewById(R.id.playerNumber);
+        Button spyButton = (Button) findViewById(R.id.spyNumber);
+        RunActivity.playerNumber = Integer.parseInt((String)playerButton.getText());
+        RunActivity.spyNumber = Integer.parseInt((String)spyButton.getText());
         startActivity(intent);
     }
 }

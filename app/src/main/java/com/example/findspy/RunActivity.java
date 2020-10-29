@@ -8,14 +8,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class RunActivity extends AppCompatActivity {
 
-    public int spy;
     public static int playerNumber;
+    public static int spyNumber;
     public int playerCounter;
+    public int spyCounter;
     public boolean roleDisplayer;
+    public int[] spy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,13 +26,37 @@ public class RunActivity extends AppCompatActivity {
         setContentView(R.layout.activity_run);
         playerCounter = 0;
         roleDisplayer = false;
-        spy = 1;
+        spy = new int[spyNumber];
         setSpy();
     }
 
     public void setSpy() {
+        if(playerNumber == spyNumber){
+            setAllPlayersSpy();
+        }
         Random random = new Random();
-        spy = random.nextInt(playerNumber) + 1;
+        for(int counter = 0; counter < spyNumber; counter++) {
+            int tempSpy = random.nextInt(playerNumber) + 1;
+            if(newSpy(tempSpy)){
+                spy[counter] = tempSpy;
+            }
+        }
+        Arrays.sort(spy);
+    }
+
+    private void setAllPlayersSpy() {
+        for(int index = 0; index < spyNumber; index++){
+            spy[index] = index + 1;
+        }
+    }
+
+    private boolean newSpy(int tempSpy) {
+        for (int i : spy) {
+            if (i == tempSpy) {
+                return false;
+            }
+        }
+        return  true;
     }
 
     public void giveRole(View view) {
@@ -37,10 +64,12 @@ public class RunActivity extends AppCompatActivity {
         Button button = (Button) view;
         if(!roleDisplayer) {
             playerCounter++;
-            if (playerCounter != spy) {
+            if (playerCounter != spy[spyCounter]) {
                 button.setText(R.string.places);
-            } else {
+            }
+            else {
                 button.setText(R.string.spy);
+                spyCounter++;
             }
             textView.setText(R.string.hide);
             roleDisplayer = true;
