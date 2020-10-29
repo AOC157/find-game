@@ -44,14 +44,14 @@ public class RunActivity extends AppCompatActivity {
             }
             textView.setText(R.string.hide);
             roleDisplayer = true;
+            if(playerCounter > playerNumber){
+                startTimer();
+            }
         }
         else {
             button.setText(R.string.role);
             textView.setText(R.string.space);
             roleDisplayer = false;
-        }
-        if(playerCounter == playerNumber){
-            startTimer();
         }
     }
 
