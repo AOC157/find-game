@@ -18,6 +18,7 @@ public class RunActivity extends AppCompatActivity {
     public int playerCounter;
     public int spyCounter;
     public boolean roleDisplayer;
+    public String place;
     public int[] spy;
 
     @Override
@@ -27,7 +28,49 @@ public class RunActivity extends AppCompatActivity {
         playerCounter = 0;
         roleDisplayer = false;
         spy = new int[spyNumber];
+        place = setPlace();
         setSpy();
+    }
+
+    private String setPlace() {
+        Random random = new Random();
+        int placeNumber = random.nextInt(17) + 1;
+        switch (placeNumber) {
+            case 1:
+                return "Restaurant";
+            case 2:
+                return "Gym";
+            case 3:
+                return "Airport";
+            case 4:
+                return "Supermarket";
+            case 5:
+                return "School";
+            case 6:
+                return "University";
+            case 7:
+                return "Bank";
+            case 8:
+                return "Cinema";
+            case 9:
+                return "Library";
+            case 10:
+                return "Bus Stop";
+            case 11:
+                return "Post Office";
+            case 12:
+                return "Cafe'";
+            case 13:
+                return "Hospital";
+            case 14:
+                return "Hotel";
+            case 15:
+                return "Museum";
+            case 16:
+                return "Park";
+            default:
+                return "Zoo";
+        }
     }
 
     public void setSpy() {
@@ -64,12 +107,17 @@ public class RunActivity extends AppCompatActivity {
         Button button = (Button) view;
         if(!roleDisplayer) {
             playerCounter++;
-            if (playerCounter != spy[spyCounter]) {
-                button.setText(R.string.places);
+            if(spyCounter < spyNumber){
+                if (playerCounter != spy[spyCounter]) {
+                    button.setText(place);
+                }
+                else {
+                    button.setText(R.string.spy);
+                    spyCounter++;
+                }
             }
-            else {
-                button.setText(R.string.spy);
-                spyCounter++;
+            else{
+                button.setText(place);
             }
             textView.setText(R.string.hide);
             roleDisplayer = true;
