@@ -21,6 +21,7 @@ public class StartActivity1 extends AppCompatActivity {
     }
 
     private void setTimer() {
+        timer = (Spinner) findViewById(R.id.min);
         String[] minute = new String[]{"1 min" , "2 min" , "3 min" , "4 min" , "5 min" , "6 min"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,R.layout.support_simple_spinner_dropdown_item,minute);
         timer.setAdapter(adapter);
