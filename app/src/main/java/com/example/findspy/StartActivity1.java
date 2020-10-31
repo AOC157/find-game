@@ -76,6 +76,12 @@ public class StartActivity1 extends AppCompatActivity {
         Button spyButton = (Button) findViewById(R.id.spyNumber);
         RunActivity.playerNumber = Integer.parseInt((String)playerButton.getText());
         RunActivity.spyNumber = Integer.parseInt((String)spyButton.getText());
+        RunActivity.time = getTime();
         startActivity(intent);
+    }
+
+    private int getTime() {
+        String text = timer.getSelectedItem().toString();
+        return Integer.parseInt(String.valueOf(text.charAt(0)));
     }
 }

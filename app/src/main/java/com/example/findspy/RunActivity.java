@@ -18,6 +18,7 @@ public class RunActivity extends AppCompatActivity {
     public int playerCounter;
     public int spyCounter;
     public boolean roleDisplayer;
+    public static int time;
     public String place;
     public int[] spy;
 
@@ -138,7 +139,7 @@ public class RunActivity extends AppCompatActivity {
         TextView hideText = (TextView) findViewById(R.id.hide);
         hideText.setVisibility(View.GONE);
         final TextView textView = findViewById(R.id.timer);
-        new CountDownTimer(180000,500) {
+        new CountDownTimer(time*60*1000,500) {
             @Override
             public void onTick(long l) {
                 int seconds = (int) l / 1000;
