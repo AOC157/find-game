@@ -144,7 +144,12 @@ public class RunActivity extends AppCompatActivity {
                 int seconds = (int) l / 1000;
                 int minutes = seconds / 60;
                 int realSeconds = seconds % 60;
-                textView.setText(String.format("%2d",minutes) + ":" + String.format("%2d",realSeconds));
+                if(realSeconds >= 10){
+                    textView.setText(String.format("%2d",minutes) + ":" + String.format("%2d",realSeconds));
+                }
+                else{
+                    textView.setText(String.format("%2d",minutes) + ":0" + realSeconds);
+                }
             }
 
             @Override
