@@ -5,14 +5,25 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 
 public class StartActivity1 extends AppCompatActivity {
+
+    Spinner timer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start1);
+        setTimer();
+    }
+
+    private void setTimer() {
+        String[] minute = new String[]{"1 min" , "2 min" , "3 min" , "4 min" , "5 min" , "6 min"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,R.layout.support_simple_spinner_dropdown_item,minute);
+        timer.setAdapter(adapter);
     }
 
     public void increasePlayer(View view){
