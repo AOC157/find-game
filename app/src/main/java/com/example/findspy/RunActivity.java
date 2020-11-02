@@ -124,7 +124,7 @@ public class RunActivity extends AppCompatActivity {
             roleDisplayer = true;
         }
         else {
-            if(playerCounter > playerNumber){
+            if(playerCounter == playerNumber){
                 startTimer();
             }
             button.setText(R.string.role);
