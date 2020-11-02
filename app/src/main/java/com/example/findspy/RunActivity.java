@@ -84,6 +84,9 @@ public class RunActivity extends AppCompatActivity {
             if(newSpy(tempSpy)){
                 spy[counter] = tempSpy;
             }
+            else{
+                counter--;
+            }
         }
         Arrays.sort(spy);
     }
