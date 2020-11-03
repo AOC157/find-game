@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:textSize="25sp"
         android:text="@string/player"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -63,6 +64,7 @@
         android:layout_height="wrap_content"
         android:textSize="25sp"
         android:text="@string/spy"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -76,6 +78,8 @@
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:text="@string/one"
+        android:background="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -88,6 +92,8 @@
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:text="@string/plus"
+        android:background="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -101,6 +107,8 @@
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:text="@string/minus"
+        android:background="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -134,7 +142,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.500"
-        app:layout_constraintVertical_bias="0.750"
+        app:layout_constraintVertical_bias="0.730"
         android:onClick="runGame"/>
 
     <Button
@@ -151,8 +159,8 @@
 
     <Spinner
         android:id="@+id/min"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_width="85dp"
+        android:layout_height="47dp"
         android:background="@android:drawable/btn_dropdown"
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toBottomOf="parent"
