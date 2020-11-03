@@ -77,6 +77,7 @@ public class RunActivity extends AppCompatActivity {
     public void setSpy() {
         if(playerNumber == spyNumber){
             setAllPlayersSpy();
+            return;
         }
         Random random = new Random();
         for(int counter = 0; counter < spyNumber; counter++) {
