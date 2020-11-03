@@ -39,6 +39,7 @@
         android:layout_height="100dp"
         android:id="@+id/timer"
         android:text="@string/space"
+        android:textColor="@color/black"
         android:textSize="50sp"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
