@@ -21,16 +21,29 @@ public class RunActivity extends AppCompatActivity {
     public static int time;
     public String place;
     public int[] spy;
+    public static boolean jokerBool;
+    public int joker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_run);
         playerCounter = 0;
+        joker = 0;
         roleDisplayer = false;
         spy = new int[spyNumber];
         place = setPlace();
         setSpy();
+        setJoker();
+    }
+
+    private void setJoker() {
+        if(!jokerBool){
+            return;
+        }
+        Random random = new Random();
+        int jokerIndex = random.nextInt(spyNumber);
+        joker = spy[jokerIndex];
     }
 
     private String setPlace() {
@@ -117,7 +130,12 @@ public class RunActivity extends AppCompatActivity {
                     button.setText(place);
                 }
                 else {
-                    button.setText(R.string.spy);
+                    if(spy[spyCounter] != joker){
+                        button.setText(R.string.spy);
+                    }
+                    else{
+                        button.setText("Joker : " + place);
+                    }
                     spyCounter++;
                 }
             }
