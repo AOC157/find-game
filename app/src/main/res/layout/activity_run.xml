@@ -8,7 +8,7 @@
     tools:context=".RunActivity">
 
     <Button
-        android:layout_width="270dp"
+        android:layout_width="350dp"
         android:layout_height="150dp"
         android:id="@+id/role"
         android:text="@string/role"
