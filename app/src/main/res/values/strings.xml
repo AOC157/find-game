@@ -13,6 +13,8 @@
     <string name="space">&#160;</string>
     <string name="finish">Finish!</string>
     <string name="joker">Joker</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
     <string name="restaurant">Restaurant</string>
     <string name="gym">Gym</string>
     <string name="airport">Airport</string>
