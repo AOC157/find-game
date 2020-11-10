@@ -9,12 +9,12 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Spinner;
-import android.widget.Switch;
+import androidx.appcompat.widget.SwitchCompat;
 
 public class StartActivity1 extends AppCompatActivity {
 
     Spinner timer;
-    Switch joker;
+    SwitchCompat joker;
     boolean jokerBool;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +26,8 @@ public class StartActivity1 extends AppCompatActivity {
     }
 
     private void setJoker() {
+        joker = (SwitchCompat) findViewById(R.id.joker);
         joker.setChecked(false);
-        joker = (Switch) findViewById(R.id.joker);
         joker.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
