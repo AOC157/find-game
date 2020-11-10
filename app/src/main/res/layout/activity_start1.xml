@@ -25,7 +25,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.500"
-        app:layout_constraintVertical_bias="0.630"/>
+        app:layout_constraintVertical_bias="0.600"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.500"
-        app:layout_constraintVertical_bias="0.210"/>
+        app:layout_constraintVertical_bias="0.100"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -50,7 +50,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.150"
-        app:layout_constraintVertical_bias="0.400"/>
+        app:layout_constraintVertical_bias="0.300"/>
 
     <Button
         android:layout_width="60dp"
@@ -62,7 +62,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.800"
-        app:layout_constraintVertical_bias="0.400"
+        app:layout_constraintVertical_bias="0.300"
         android:onClick="increasePlayer"/>
 
     <Button
@@ -75,7 +75,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.400"
-        app:layout_constraintVertical_bias="0.400"
+        app:layout_constraintVertical_bias="0.300"
         android:onClick="decreasePlayer"/>
 
     <TextView
@@ -89,7 +89,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.150"
-        app:layout_constraintVertical_bias="0.530"/>
+        app:layout_constraintVertical_bias="0.460"/>
 
     <Button
         android:id="@+id/playerNumber"
@@ -103,7 +103,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.610"
-        app:layout_constraintVertical_bias="0.400"/>
+        app:layout_constraintVertical_bias="0.300"/>
 
     <Button
         android:layout_width="60dp"
@@ -116,7 +116,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.800"
-        app:layout_constraintVertical_bias="0.530"
+        app:layout_constraintVertical_bias="0.460"
         android:onClick="increaseSpy"/>
 
     <Button
@@ -130,7 +130,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.400"
-        app:layout_constraintVertical_bias="0.530"
+        app:layout_constraintVertical_bias="0.460"
         android:onClick="decreaseSpy"/>
 
     <Button
@@ -146,7 +146,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.610"
-        app:layout_constraintVertical_bias="0.530"/>
+        app:layout_constraintVertical_bias="0.460"/>
 
     <Button
         android:layout_width="120dp"
