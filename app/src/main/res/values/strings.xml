@@ -15,7 +15,8 @@
     <string name="joker">Joker</string>
     <string name="no">No</string>
     <string name="yes">Yes</string>
-    <string name="exit">Do you want to exit?</string>
+    <string name="exitMassage">Do you want to exit?</string>
+    <string name="exit">EXIT</string>
     <string name="restaurant">Restaurant</string>
     <string name="gym">Gym</string>
     <string name="airport">Airport</string>
