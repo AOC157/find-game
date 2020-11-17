@@ -13,6 +13,7 @@ import java.util.Random;
 
 public class RunActivity extends AppCompatActivity {
 
+    public static final int NUMBER_OF_PLACES = 25;
     public static int playerNumber;
     public static int spyNumber;
     public int playerCounter;
@@ -48,7 +49,7 @@ public class RunActivity extends AppCompatActivity {
 
     private String setPlace() {
         Random random = new Random();
-        int placeNumber = random.nextInt(17) + 1;
+        int placeNumber = random.nextInt(NUMBER_OF_PLACES) + 1;
         switch (placeNumber) {
             case 1:
                 return "Restaurant";
@@ -82,8 +83,24 @@ public class RunActivity extends AppCompatActivity {
                 return "Museum";
             case 16:
                 return "Park";
-            default:
+            case 17:
                 return "Zoo";
+            case 18:
+                return "House";
+            case 19:
+                return "Parking";
+            case 20:
+                return "Fire Station";
+            case 21:
+                return "Sea";
+            case 22:
+                return "Village";
+            case 23:
+                return "Factory";
+            case 24:
+                return "Jail";
+            default:
+                return "Drugstore";
         }
     }
 

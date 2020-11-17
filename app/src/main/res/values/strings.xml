@@ -35,4 +35,12 @@
     <string name="museum">Museum</string>
     <string name="park">Park</string>
     <string name="zoo">Zoo</string>
+    <string name="house">House</string>
+    <string name="parking">Parking</string>
+    <string name="fireStation">Fire Station</string>
+    <string name="sea">Sea</string>
+    <string name="village">Village</string>
+    <string name="factory">Factory</string>
+    <string name="jail">Jail</string>
+    <string name="drugStore">Drugstore</string>
 </resources>
