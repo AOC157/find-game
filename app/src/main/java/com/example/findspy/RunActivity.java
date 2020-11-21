@@ -20,7 +20,7 @@ public class RunActivity extends AppCompatActivity {
     public int spyCounter;
     public boolean roleDisplayer;
     public static int time;
-    public String place;
+    public int place;
     public int[] spy;
     public static boolean jokerBool;
     public int joker;
@@ -47,60 +47,60 @@ public class RunActivity extends AppCompatActivity {
         joker = spy[jokerIndex];
     }
 
-    private String setPlace() {
+    private int setPlace() {
         Random random = new Random();
         int placeNumber = random.nextInt(NUMBER_OF_PLACES) + 1;
         switch (placeNumber) {
             case 1:
-                return "Restaurant";
+                return R.string.restaurant;
             case 2:
-                return "Gym";
+                return R.string.gym;
             case 3:
-                return "Airport";
+                return R.string.airport;
             case 4:
-                return "Supermarket";
+                return R.string.supermarket;
             case 5:
-                return "School";
+                return R.string.school;
             case 6:
-                return "University";
+                return R.string.university;
             case 7:
-                return "Bank";
+                return R.string.bank;
             case 8:
-                return "Cinema";
+                return R.string.cinema;
             case 9:
-                return "Library";
+                return R.string.library;
             case 10:
-                return "Bus Stop";
+                return R.string.busStop;
             case 11:
-                return "Post Office";
+                return R.string.postOffice;
             case 12:
-                return "Cafe'";
+                return R.string.cafe;
             case 13:
-                return "Hospital";
+                return R.string.hospital;
             case 14:
-                return "Hotel";
+                return R.string.hotel;
             case 15:
-                return "Museum";
+                return R.string.museum;
             case 16:
-                return "Park";
+                return R.string.park;
             case 17:
-                return "Zoo";
+                return R.string.zoo;
             case 18:
-                return "House";
+                return R.string.house;
             case 19:
-                return "Parking";
+                return R.string.parking;
             case 20:
-                return "Fire Station";
+                return R.string.fireStation;
             case 21:
-                return "Sea";
+                return R.string.sea;
             case 22:
-                return "Village";
+                return R.string.village;
             case 23:
-                return "Factory";
+                return R.string.factory;
             case 24:
-                return "Jail";
+                return R.string.jail;
             default:
-                return "Drugstore";
+                return R.string.drugStore;
         }
     }
 
