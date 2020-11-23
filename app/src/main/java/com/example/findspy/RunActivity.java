@@ -151,7 +151,7 @@ public class RunActivity extends AppCompatActivity {
                         button.setText(R.string.spy);
                     }
                     else{
-                        button.setText("Joker : " + place);
+                        button.setText("Joker : " + getResources().getString(place));
                     }
                     spyCounter++;
                 }
