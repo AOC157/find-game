@@ -28,6 +28,7 @@ public class RunActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
         setContentView(R.layout.activity_run);
         playerCounter = 0;
         joker = 0;

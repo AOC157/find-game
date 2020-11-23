@@ -9,6 +9,13 @@ public class PlacesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        overridePendingTransition(R.anim.slide_in_down,R.anim.slide_out_down);
         setContentView(R.layout.activity_places);
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.slide_in_down,R.anim.slide_out_down);
     }
 }
