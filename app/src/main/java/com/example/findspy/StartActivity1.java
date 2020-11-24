@@ -112,7 +112,7 @@ public class StartActivity1 extends AppCompatActivity {
     public void displayPlaces(View view){
         Intent intent = new Intent(StartActivity1.this,PlacesActivity.class);
         startActivity(intent);
-        overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_up);
+        overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_down);
     }
 
     public void runGame(View view){
@@ -124,7 +124,7 @@ public class StartActivity1 extends AppCompatActivity {
         RunActivity.jokerBool = jokerBool;
         RunActivity.time = getTime();
         startActivity(intent);
-        overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_left);
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
     }
 
     private int getTime() {
