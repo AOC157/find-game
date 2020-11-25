@@ -26,6 +26,12 @@ public class MainActivity extends AppCompatActivity {
             player = MediaPlayer.create(this, R.raw.intromusic);
         }
         player.start();
+        player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                stopPlayer();
+            }
+        });
     }
 
     private void startMainActivity() {
@@ -53,6 +59,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+        stopPlayer();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
         stopPlayer();
     }
 }
