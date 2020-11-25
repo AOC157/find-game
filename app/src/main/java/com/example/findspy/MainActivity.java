@@ -38,11 +38,17 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this,StartActivity1.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+                stopPlayer();
                 finish();
             }
         };
         Timer timer = new Timer();
         timer.schedule(task,3000);
+    }
+
+    private void stopPlayer() {
+        player.release();
+        player = null;
     }
 
 }
