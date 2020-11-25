@@ -48,4 +48,9 @@ public class MainActivity extends AppCompatActivity {
         player = null;
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        stopPlayer();
+    }
 }
