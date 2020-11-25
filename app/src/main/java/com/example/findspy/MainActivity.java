@@ -1,6 +1,7 @@
 package com.example.findspy;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 
@@ -13,11 +14,21 @@ import static java.lang.Thread.sleep;
 
 public class MainActivity extends AppCompatActivity {
 
+    MediaPlayer player;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        playIntroMusic();
         startMainActivity();
+    }
+
+    private void playIntroMusic() {
+        if(player == null){
+            player = MediaPlayer.create(this, R.raw.intromusic);
+        }
+        player.start();
     }
 
     private void startMainActivity() {
