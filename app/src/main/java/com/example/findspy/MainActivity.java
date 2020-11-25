@@ -44,8 +44,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void stopPlayer() {
-        player.release();
-        player = null;
+        if(player != null) {
+            player.release();
+            player = null;
+        }
     }
 
     @Override
