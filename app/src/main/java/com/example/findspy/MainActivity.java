@@ -1,8 +1,11 @@
 package com.example.findspy;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,14 +15,24 @@ import java.util.TimerTask;
 public class MainActivity extends AppCompatActivity {
 
     MediaPlayer player;
+    ImageView image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        overridePendingTransition(R.anim.fade_in,R.anim.slide_out_left);
+        image = (ImageView) findViewById(R.id.findSpy);
+        replaceImage();
         playIntroMusic();
         startMainActivity();
+    }
+
+    private void replaceImage() {
+        ObjectAnimator animator = ObjectAnimator.ofFloat(image,"y",550f,200f);
+        animator.setDuration(1000);
+        AnimatorSet animatorSet = new AnimatorSet();
+        animatorSet.playTogether(animator);
+        animatorSet.start();
     }
 
     private void playIntroMusic() {
