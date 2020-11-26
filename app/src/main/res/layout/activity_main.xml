@@ -8,14 +8,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        app:srcCompat="@drawable/intro"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:id="@+id/findSpy"
+        android:background="@color/black"
+        android:paddingStart="1dp"
+        android:paddingEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.510"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.570"
+        app:srcCompat="@drawable/intro" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/top_secret"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.500"
-        app:layout_constraintVertical_bias="0.500"/>
+        app:layout_constraintVertical_bias="0.600"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
