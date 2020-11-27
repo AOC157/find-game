@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void replaceImage() {
-        ObjectAnimator animator = ObjectAnimator.ofFloat(image,"y",550f,200f);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(image,"y",600f,170f);
         animator.setDuration(1000);
         AnimatorSet animatorSet = new AnimatorSet();
         animatorSet.playTogether(animator);
