@@ -24,11 +24,11 @@
     <string name="supermarket">Supermarket &#127853;</string>
     <string name="school">School &#128212;</string>
     <string name="university">University &#127891;</string>
-    <string name="bank">Bank &#127974;</string>
+    <string name="bank">Bank &#128176;</string>
     <string name="cinema">Cinema &#127909;</string>
     <string name="library">Library &#128218;</string>
     <string name="busStop">Bus Stop &#128655;</string>
-    <string name="postOffice">Post Office &#127972;</string>
+    <string name="postOffice">Post Office &#128234;</string>
     <string name="cafe">Cafe\' &#9749;</string>
     <string name="hospital">Hospital &#127973;</string>
     <string name="hotel">Hotel &#x1F3E8;</string>
@@ -39,7 +39,7 @@
     <string name="parking">Parking &#127359;</string>
     <string name="fireStation">Fire Station &#128658;</string>
     <string name="sea">Sea &#127754;</string>
-    <string name="village">Village &#127963;</string>
+    <string name="village">Village &#127749;</string>
     <string name="factory">Factory &#127981;</string>
     <string name="jail">Jail &#9878;</string>
     <string name="drugStore">Drugstore &#128138;</string>
