@@ -13,7 +13,7 @@ import java.util.Random;
 
 public class RunActivity extends AppCompatActivity {
 
-    public static final int NUMBER_OF_PLACES = 25;
+    public static final int NUMBER_OF_PLACES = 24;
     public static int playerNumber;
     public static int spyNumber;
     public int playerCounter;
@@ -101,13 +101,11 @@ public class RunActivity extends AppCompatActivity {
             case 21:
                 return R.string.sea;
             case 22:
-                return R.string.village;
+                return R.string.drugStore;
             case 23:
                 return R.string.factory;
-            case 24:
-                return R.string.jail;
             default:
-                return R.string.drugStore;
+                return R.string.jail;
         }
     }
 
