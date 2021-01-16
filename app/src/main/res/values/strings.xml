@@ -8,6 +8,9 @@
     <string name="spy">Spy</string>
     <string name="start">START</string>
     <string name="places">Places</string>
+    <string name="place">Place</string>
+    <string name="thing">Thing</string>
+    <string name="food">Food</string>
     <string name="role">Tap to show your role</string>
     <string name="hide">tap to hide</string>
     <string name="space">&#160;</string>
