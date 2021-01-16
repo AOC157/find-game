@@ -18,6 +18,8 @@ public class StartActivity1 extends AppCompatActivity {
     Spinner timer;
     SwitchCompat joker;
     boolean jokerBool;
+    static String mode;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
