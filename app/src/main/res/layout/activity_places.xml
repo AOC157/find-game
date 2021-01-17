@@ -226,7 +226,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/village"
+            android:text="@string/factory"
             android:id="@+id/p22"
             android:textSize="25sp"
             android:layout_marginTop="50dp"
@@ -236,7 +236,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/factory"
+            android:text="@string/jail"
             android:id="@+id/p23"
             android:textSize="25sp"
             android:layout_marginTop="50dp"
@@ -246,18 +246,8 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/jail"
-            android:id="@+id/p24"
-            android:textSize="25sp"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:text="@string/drugStore"
-            android:id="@+id/p25"
+            android:id="@+id/p24"
             android:textSize="25sp"
             android:layout_marginTop="50dp"
             android:layout_marginLeft="10dp"
