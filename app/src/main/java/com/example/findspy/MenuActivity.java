@@ -20,13 +20,16 @@ public class MenuActivity extends AppCompatActivity {
 
     public void setPlaceMode(View view){
         StartActivity1.mode = "place";
+        RunActivity.mode = "place";
     }
 
     public void setThingMode(View view){
         StartActivity1.mode = "thing";
+        RunActivity.mode = "thing";
     }
 
     public void setFoodMode(View view){
         StartActivity1.mode = "food";
+        RunActivity.mode = "food";
     }
 }
