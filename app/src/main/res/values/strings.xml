@@ -45,4 +45,12 @@
     <string name="factory">Factory &#127981;</string>
     <string name="jail">Jail &#9878;</string>
     <string name="drugStore">Drugstore &#128138;</string>
+
+    <string name="pen">Pen</string>
+    <string name="pencil">pencil</string>
+    <string name="car">Car</string>
+
+    <string name="ice_cream">Ice-cream</string>
+    <string name="cheese">Cheese</string>
+    <string name="jam">Jam</string>
 </resources>
