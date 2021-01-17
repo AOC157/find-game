@@ -14,15 +14,19 @@ import java.util.Random;
 
 public class RunActivity extends AppCompatActivity {
 
-    public static final int NUMBER_OF_PLACES = 24;
+    public static final int NUMBER_OF_PLACES = 24;    
+    public static final int NUMBER_OF_FOODS = 3;
+    public static final int NUMBER_OF_THINGS = 3;
+
     public static int playerNumber;
     public static int spyNumber;
     public int playerCounter;
     public int spyCounter;
     public boolean roleDisplayer;
     public static int time;
-    public int place;
+    public int answer;
     public int[] spy;
+    public static String mode;
     public static boolean jokerBool;
     public int joker;
 
@@ -37,9 +41,50 @@ public class RunActivity extends AppCompatActivity {
         joker = 0;
         roleDisplayer = false;
         spy = new int[spyNumber];
-        place = setPlace();
+        answer = setAnswer();
         setSpy();
         setJoker();
+    }
+
+    private int setAnswer() {
+        switch (mode){
+            case "food":
+                answer = setFood();
+                break;
+            case "thing":
+                answer = setThing();
+                break;
+            case "place":
+                answer = setPlace();
+                break;
+        }
+        return answer;
+    }
+
+    private int setThing() {
+        Random random = new Random();
+        int thingNumber = random.nextInt(NUMBER_OF_THINGS) + 1;
+        switch (thingNumber){
+            case 1:
+                return R.string.pen;
+            case 2:
+                return R.string.pencil;
+            default:
+                return R.string.car;
+        }
+    }
+
+    private int setFood() {
+        Random random = new Random();
+        int foodNumber = random.nextInt(NUMBER_OF_FOODS) + 1;
+        switch (foodNumber){
+            case 1:
+                return R.string.ice_cream;
+            case 2:
+                return R.string.cheese;
+            default:
+                return R.string.jam;
+        }
     }
 
     @Override
@@ -50,6 +95,8 @@ public class RunActivity extends AppCompatActivity {
         }
     }
 
+    
+    
     private void setJoker() {
         if(!jokerBool){
             return;
@@ -154,20 +201,20 @@ public class RunActivity extends AppCompatActivity {
             playerCounter++;
             if(spyCounter < spyNumber){
                 if (playerCounter != spy[spyCounter]) {
-                    button.setText(place);
+                    button.setText(answer);
                 }
                 else {
                     if(spy[spyCounter] != joker){
                         button.setText(R.string.spy);
                     }
                     else{
-                        button.setText("Joker : " + getResources().getString(place));
+                        button.setText("Joker : " + getResources().getString(answer));
                     }
                     spyCounter++;
                 }
             }
             else{
-                button.setText(place);
+                button.setText(answer);
             }
             textView.setText(R.string.hide);
             roleDisplayer = true;
