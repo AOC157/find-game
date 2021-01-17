@@ -127,7 +127,32 @@ public class StartActivity1 extends AppCompatActivity {
         button.setText(String.valueOf(spyNumber));
     }
 
-    public void displayPlaces(View view){
+    public void displayAnswers(View view){
+        switch (mode){
+            case "food":
+                displayFoods();
+                return;
+            case "thing":
+                displayThings();
+                return;
+            case "place":
+                displayPlaces();
+        }
+    }
+
+    private void displayThings() {
+        Intent intent = new Intent(StartActivity1.this,ThingActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_down);
+    }
+
+    private void displayFoods() {
+        Intent intent = new Intent(StartActivity1.this,FoodsActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_down);
+    }
+
+    private void displayPlaces(){
         Intent intent = new Intent(StartActivity1.this,PlacesActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_down);
