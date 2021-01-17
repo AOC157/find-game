@@ -20,14 +20,30 @@ public class StartActivity1 extends AppCompatActivity {
     boolean jokerBool;
     static String mode;
 
+    public Button answers = findViewById(R.id.answers);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
         setContentView(R.layout.activity_start1);
+        serAnswers();
         jokerBool = false;
         setTimer();
         setJoker();
+    }
+
+    private void serAnswers() {
+        switch (mode){
+            case "food":
+                answers.setText(R.string.foods);
+                return;
+            case "thing":
+                answers.setText(R.string.things);
+                return;
+            case "place":
+                answers.setText(R.string.places);
+        }
     }
 
     @Override
