@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         TimerTask task = new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity.this,StartActivity1.class);
+                Intent intent = new Intent(MainActivity.this,MenuActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in,R.anim.slide_out_left);
                 stopPlayer();
