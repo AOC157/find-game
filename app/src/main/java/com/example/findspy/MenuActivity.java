@@ -2,6 +2,8 @@ package com.example.findspy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -38,5 +40,28 @@ public class MenuActivity extends AppCompatActivity {
         Intent intent = new Intent(MenuActivity.this,StartActivity1.class);
         startActivity(intent);
         overridePendingTransition(R.anim.fade_in,R.anim.slide_out_left);
+    }
+
+    @Override
+    public void onBackPressed(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.exit);
+        builder.setMessage(R.string.exitMassage);
+        builder.setCancelable(false);
+        builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                MenuActivity.this.finish();
+            }
+        });
+        builder.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.cancel();
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.setCanceledOnTouchOutside(true);
+        alert.show();
     }
 }
