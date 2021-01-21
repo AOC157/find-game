@@ -17,7 +17,6 @@
             android:id="@+id/place"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/green"
             android:text="@string/places"
             android:onClick="setPlaceMode"/>
     </LinearLayout>
@@ -32,7 +31,6 @@
             android:id="@+id/thing"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/green"
             android:text="@string/thing"
             android:onClick="setThingMode"/>
     </LinearLayout>
@@ -47,7 +45,6 @@
             android:id="@+id/food"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/green"
             android:text="@string/food"
             android:onClick="setFoodMode"/>
     </LinearLayout>
