@@ -2,7 +2,6 @@ package com.example.findspy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -62,7 +61,7 @@ public class RunActivity extends AppCompatActivity {
     private String setThing() {
         Random random = new Random();
         int thingIndex = random.nextInt(NUMBER_OF_THINGS) + 1;
-        return getResources().getStringArray(R.array.places)[thingIndex];
+        return getResources().getStringArray(R.array.things)[thingIndex];
     }
 
     private String setFood() {
