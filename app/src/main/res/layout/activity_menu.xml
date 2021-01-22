@@ -10,27 +10,39 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/places"
         android:layout_weight="1.0"
-        android:orientation="horizontal">
+        android:gravity="center"
+        android:clickable="true"
+        android:onClick="setPlaceMode"
+        android:orientation="horizontal"
+        android:focusable="true">
 
         <Button
             android:id="@+id/place"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setPlaceMode"
             android:text="@string/places"
-            android:onClick="setPlaceMode"/>
+            android:background="@color/colorPrimary"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1.0"
-        android:orientation="horizontal">
+        android:gravity="center"
+        android:background="@drawable/things1"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="setThingMode">
 
         <Button
             android:id="@+id/thing"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
             android:text="@string/thing"
             android:onClick="setThingMode"/>
     </LinearLayout>
@@ -39,13 +51,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1.0"
-        android:orientation="horizontal">
+        android:gravity="center"
+        android:background="@drawable/foods1"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="setFoodMode">
 
         <Button
             android:id="@+id/food"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/food"
+            android:background="@color/colorPrimary"
             android:onClick="setFoodMode"/>
     </LinearLayout>
 
