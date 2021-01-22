@@ -2,8 +2,6 @@ package com.example.findspy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -18,9 +16,7 @@ public class StartActivity1 extends AppCompatActivity {
     Spinner timer;
     SwitchCompat joker;
     boolean jokerBool;
-    static String mode;
-
-    public Button answers = findViewById(R.id.answers);
+    public static String mode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +30,7 @@ public class StartActivity1 extends AppCompatActivity {
     }
 
     private void serAnswers() {
+        Button answers = (Button) findViewById(R.id.answers);
         switch (mode){
             case "food":
                 answers.setText(R.string.foods);

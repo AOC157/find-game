@@ -24,6 +24,33 @@
     <string name="exitMassage">Do you want to exit?</string>
     <string name="exit">EXIT</string>
 
+    <string-array name="places">
+        <item name="restaurant">Restaurant &#127860;</item>
+        <item name="gym">Gym &#9917;</item>
+        <item name="airport">Airport &#9992;</item>
+        <item name="supermarket">Supermarket &#127853;</item>
+        <item name="school">School &#128212;</item>
+        <item name="university">University &#127891;</item>
+        <item name="bank">Bank &#128176;</item>
+        <item name="cinema">Cinema &#127909;</item>
+        <item name="library">Library &#128218;</item>
+        <item name="busStop">Bus Stop &#128655;</item>
+        <item name="postOffice">Post Office &#128234;</item>
+        <item name="cafe">Cafe\' &#9749;</item>
+        <item name="hospital">Hospital &#127973;</item>
+        <item name="hotel">Hotel &#x1F3E8;</item>
+        <item name="museum">Museum &#9905;</item>
+        <item name="park">Park &#127905;</item>
+        <item name="zoo">Zoo &#128053;</item>
+        <item name="house">House &#127968;</item>
+        <item name="parking">Parking &#127359;</item>
+        <item name="fireStation">Fire Station &#128658;</item>
+        <item name="sea">Sea &#127754;</item>
+        <item name="factory">Factory &#127981;</item>
+        <item name="jail">Jail &#9878;</item>
+        <item name="drugStore">Drugstore &#128138;</item>
+    </string-array>
+
     <string name="restaurant">Restaurant &#127860;</string>
     <string name="gym">Gym &#9917;</string>
     <string name="airport">Airport &#9992;</string>
@@ -49,11 +76,24 @@
     <string name="jail">Jail &#9878;</string>
     <string name="drugStore">Drugstore &#128138;</string>
 
+    <string-array name="things">
+        <item name="pen">Pen</item>
+        <item name="pencil">pencil</item>
+        <item name="car">Car</item>
+    </string-array>
+
     <string name="pen">Pen</string>
     <string name="pencil">pencil</string>
     <string name="car">Car</string>
 
+    <string-array name="foods">
+        <item name="ice_cream">Ice-cream</item>
+        <item name="cheese">Cheese</item>
+        <item name="jam">Jam</item>
+    </string-array>
+
     <string name="ice_cream">Ice-cream</string>
     <string name="cheese">Cheese</string>
     <string name="jam">Jam</string>
+
 </resources>
