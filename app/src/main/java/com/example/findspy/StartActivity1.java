@@ -29,6 +29,12 @@ public class StartActivity1 extends AppCompatActivity {
         setJoker();
     }
 
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
+    }
+
     private void serAnswers() {
         Button answers = (Button) findViewById(R.id.answers);
         switch (mode){
