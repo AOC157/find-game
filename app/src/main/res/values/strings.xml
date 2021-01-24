@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">FindSpy</string>
-    <string name="findSpy">Find Spy</string>
-    <string name="plus">+</string>
-    <string name="minus">-</string>
-    <string name="one">1</string>
+    <string name="findSpy" translatable="false">Find Spy</string>
+    <string name="plus" translatable="false">+</string>
+    <string name="minus" translatable="false">-</string>
+    <string name="one" translatable="false">1</string>
     <string name="player">Player</string>
     <string name="spy">Spy</string>
     <string name="start">START</string>
