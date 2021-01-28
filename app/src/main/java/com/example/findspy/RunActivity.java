@@ -60,13 +60,13 @@ public class RunActivity extends AppCompatActivity {
 
     private String setThing() {
         Random random = new Random();
-        int thingIndex = random.nextInt(NUMBER_OF_THINGS) + 1;
+        int thingIndex = random.nextInt(NUMBER_OF_THINGS);
         return getResources().getStringArray(R.array.things)[thingIndex];
     }
 
     private String setFood() {
         Random random = new Random();
-        int foodIndex = random.nextInt(NUMBER_OF_FOODS) + 1;
+        int foodIndex = random.nextInt(NUMBER_OF_FOODS);
         return getResources().getStringArray(R.array.foods)[foodIndex];
     }
 
@@ -89,7 +89,7 @@ public class RunActivity extends AppCompatActivity {
 
     private String setPlace() {
         Random random = new Random();
-        int placeIndex = random.nextInt(NUMBER_OF_PLACES) + 1;
+        int placeIndex = random.nextInt(NUMBER_OF_PLACES);
         return getResources().getStringArray(R.array.places)[placeIndex];
     }
 
