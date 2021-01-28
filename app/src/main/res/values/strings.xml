@@ -25,30 +25,30 @@
     <string name="exit">EXIT</string>
 
     <string-array name="places">
-        <item name="restaurant">Restaurant &#127860;</item>
-        <item name="gym">Gym &#9917;</item>
-        <item name="airport">Airport &#9992;</item>
-        <item name="supermarket">Supermarket &#127853;</item>
-        <item name="school">School &#128212;</item>
-        <item name="university">University &#127891;</item>
-        <item name="bank">Bank &#128176;</item>
-        <item name="cinema">Cinema &#127909;</item>
-        <item name="library">Library &#128218;</item>
-        <item name="busStop">Bus Stop &#128655;</item>
-        <item name="postOffice">Post Office &#128234;</item>
-        <item name="cafe">Cafe\' &#9749;</item>
-        <item name="hospital">Hospital &#127973;</item>
-        <item name="hotel">Hotel &#x1F3E8;</item>
-        <item name="museum">Museum &#9905;</item>
-        <item name="park">Park &#127905;</item>
-        <item name="zoo">Zoo &#128053;</item>
-        <item name="house">House &#127968;</item>
-        <item name="parking">Parking &#127359;</item>
-        <item name="fireStation">Fire Station &#128658;</item>
-        <item name="sea">Sea &#127754;</item>
-        <item name="factory">Factory &#127981;</item>
-        <item name="jail">Jail &#9878;</item>
-        <item name="drugStore">Drugstore &#128138;</item>
+        <item name="restaurant">@string/restaurant</item>
+        <item name="gym">@string/gym</item>
+        <item name="airport">@string/airport</item>
+        <item name="supermarket">@string/supermarket</item>
+        <item name="school">@string/school</item>
+        <item name="university">@string/university</item>
+        <item name="bank">@string/bank</item>
+        <item name="cinema">@string/cinema</item>
+        <item name="library">@string/library</item>
+        <item name="busStop">@string/busStop</item>
+        <item name="postOffice">@string/postOffice</item>
+        <item name="cafe">@string/cafe</item>
+        <item name="hospital">@string/hospital</item>
+        <item name="hotel">@string/hotel</item>
+        <item name="museum">@string/museum</item>
+        <item name="park">@string/park</item>
+        <item name="zoo">@string/zoo</item>
+        <item name="house">@string/house</item>
+        <item name="parking">@string/parking</item>
+        <item name="fireStation">@string/fireStation</item>
+        <item name="sea">@string/sea</item>
+        <item name="factory">@string/factory</item>
+        <item name="jail">@string/jail</item>
+        <item name="drugStore">@string/drugStore</item>
     </string-array>
 
     <string name="restaurant">Restaurant &#127860;</string>
@@ -77,9 +77,9 @@
     <string name="drugStore">Drugstore &#128138;</string>
 
     <string-array name="things">
-        <item name="pen">Pen</item>
-        <item name="pencil">pencil</item>
-        <item name="car">Car</item>
+        <item name="pen">@string/pen</item>
+        <item name="pencil">@string/pencil</item>
+        <item name="car">@string/car</item>
     </string-array>
 
     <string name="pen">Pen</string>
@@ -87,9 +87,9 @@
     <string name="car">Car</string>
 
     <string-array name="foods">
-        <item name="ice_cream">Ice-cream</item>
-        <item name="cheese">Cheese</item>
-        <item name="jam">Jam</item>
+        <item name="ice_cream">@string/ice_cream</item>
+        <item name="cheese">@string/cheese</item>
+        <item name="jam">@string/jam</item>
     </string-array>
 
     <string name="ice_cream">Ice-cream</string>
