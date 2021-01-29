@@ -80,11 +80,34 @@
         <item name="pen">@string/pen</item>
         <item name="pencil">@string/pencil</item>
         <item name="car">@string/car</item>
+        <item name="key">@string/key</item>
+        <item name="computer">@string/computer</item>
+        <item name="phone">@string/phone</item>
+        <item name="glasses">@string/glasses</item>
+        <item name="wallet">@string/wallet</item>
+        <item name="camera">@string/camera</item>
+        <item name="coin">@string/coin</item>
+        <item name="umbrella">@string/umbrella</item>
+        <item name="mirror">@string/mirror</item>
+        <item name="book">@string/book</item>
+        <item name="lightBulb">@string/lightBulb</item>
     </string-array>
 
     <string name="pen">Pen</string>
-    <string name="pencil">pencil</string>
+    <string name="pencil">Pencil</string>
     <string name="car">Car</string>
+    <string name="key">Key</string>
+    <string name="computer">Computer</string>
+    <string name="phone">Phone</string>
+    <string name="glasses">Glasses</string>
+    <string name="wallet">Wallet</string>
+    <string name="camera">Camera</string>
+    <string name="coin">Coin</string>
+    <string name="umbrella">Umbrella</string>
+    <string name="mirror">Mirror</string>
+    <string name="book">Book</string>
+    <string name="lightBulb">Light Bulb</string>
+
 
     <string-array name="foods">
         <item name="ice_cream">@string/ice_cream</item>

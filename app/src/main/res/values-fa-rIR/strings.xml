@@ -50,4 +50,15 @@
     <string name="cheese">پنیر</string>
     <string name="jam">مربا</string>
     <string name="space">" "</string>
+    <string name="key">کلید</string>
+    <string name="computer">کامپیوتر</string>
+    <string name="phone">موبایل</string>
+    <string name="glasses">عینک</string>
+    <string name="wallet">کمربند</string>
+    <string name="camera">دوربین</string>
+    <string name="coin">سکه</string>
+    <string name="umbrella">چتر</string>
+    <string name="mirror">آینه</string>
+    <string name="book">کتاب</string>
+    <string name="lightBulb">لامپ</string>
 </resources>
