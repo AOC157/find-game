@@ -113,10 +113,42 @@
         <item name="ice_cream">@string/ice_cream</item>
         <item name="cheese">@string/cheese</item>
         <item name="jam">@string/jam</item>
+        <item name="salad">@string/salad</item>
+        <item name="sandwich">@string/sandwich</item>
+        <item name="bread">@string/bread</item>
+        <item name="fish">@string/fish</item>
+        <item name="rice">@string/rice</item>
+        <item name="pizza">@string/pizza</item>
+        <item name="milk">@string/milk</item>
+        <item name="candy">@string/candy</item>
+        <item name="cake">@string/cake</item>
+        <item name="chocolate">@string/chocolate</item>
+        <item name="water">@string/water</item>
+        <item name="egg">@string/egg</item>
+        <item name="butter">@string/butter</item>
+        <item name="cream">@string/cream</item>
+        <item name="kebab">@string/kebab</item>
+        <item name="yogurt">@string/yogurt</item>
     </string-array>
 
     <string name="ice_cream">Ice-cream</string>
     <string name="cheese">Cheese</string>
     <string name="jam">Jam</string>
+    <string name="salad">Salad</string>
+    <string name="sandwich">Sandwich</string>
+    <string name="bread">Bread</string>
+    <string name="fish">Fish</string>
+    <string name="rice">Rice</string>
+    <string name="pizza">Pizza</string>
+    <string name="milk">Milk</string>
+    <string name="candy">Candy</string>
+    <string name="cake">Cake</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="water">Water</string>
+    <string name="egg">Egg</string>
+    <string name="butter">Butter</string>
+    <string name="cream">Cream</string>
+    <string name="kebab">Kebab</string>
+    <string name="yogurt">Yogurt</string>
 
 </resources>

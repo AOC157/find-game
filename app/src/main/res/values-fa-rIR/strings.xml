@@ -61,4 +61,20 @@
     <string name="mirror">آینه</string>
     <string name="book">کتاب</string>
     <string name="lightBulb">لامپ</string>
+    <string name="salad">سالاد</string>
+    <string name="sandwich">ساندویچ</string>
+    <string name="bread">نان</string>
+    <string name="fish">ماهی</string>
+    <string name="rice">برنج</string>
+    <string name="pizza">پیتزا</string>
+    <string name="milk">شیر</string>
+    <string name="candy">آبنبات</string>
+    <string name="cake">کیک</string>
+    <string name="chocolate">شکلات</string>
+    <string name="water">آب</string>
+    <string name="egg">تخم مرغ</string>
+    <string name="butter">کره</string>
+    <string name="cream">خامه</string>
+    <string name="kebab">کباب</string>
+    <string name="yogurt">ماست</string>
 </resources>
