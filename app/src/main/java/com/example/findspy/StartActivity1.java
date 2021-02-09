@@ -120,7 +120,16 @@ public class StartActivity1 extends AppCompatActivity {
                 return;
             case "place":
                 displayPlaces();
+                return;
+            case "city":
+                displayCities();
         }
+    }
+
+    private void displayCities() {
+        Intent intent = new Intent(StartActivity1.this,CitiesActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_up,R.anim.slide_out_down);
     }
 
     private void displayThings() {
