@@ -42,6 +42,14 @@ public class MenuActivity extends AppCompatActivity {
         overridePendingTransition(R.anim.fade_in,R.anim.slide_out_left);
     }
 
+    public void setCityMode(View view){
+        StartActivity1.mode = "city";
+        RunActivity.mode = "city";
+        Intent intent = new Intent(MenuActivity.this,StartActivity1.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.fade_in,R.anim.slide_out_left);
+    }
+
     @Override
     public void onBackPressed(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);

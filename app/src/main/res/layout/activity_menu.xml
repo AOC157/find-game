@@ -50,7 +50,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1.0"
             android:text="@string/cities"
-            android:onClick="setFoodMode"/>
+            android:onClick="setCityMode"/>
     </LinearLayout>
 
 
