@@ -10,46 +10,22 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/places"
         android:layout_weight="1.0"
-        android:gravity="center"
-        android:clickable="true"
-        android:onClick="setPlaceMode"
-        android:orientation="horizontal"
-        android:focusable="true">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/place"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
             android:onClick="setPlaceMode"
-            android:text="@string/places"
-            android:background="@color/colorPrimary"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1.4"
-        android:orientation="horizontal"
-        android:background="@color/black"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1.0"
-        android:gravity="center"
-        android:background="@drawable/things1"
-        android:orientation="horizontal"
-        android:clickable="true"
-        android:focusable="true"
-        android:onClick="setThingMode">
+            android:text="@string/places"/>
 
         <Button
             android:id="@+id/thing"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
             android:text="@string/things"
             android:onClick="setThingMode"/>
     </LinearLayout>
@@ -57,27 +33,23 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1.4"
-        android:orientation="horizontal"
-        android:background="@color/black"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:layout_weight="1.0"
-        android:gravity="center"
-        android:background="@drawable/foods1"
-        android:orientation="horizontal"
-        android:clickable="true"
-        android:focusable="true"
-        android:onClick="setFoodMode">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/food"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
             android:text="@string/foods"
-            android:background="@color/colorPrimary"
+            android:onClick="setFoodMode"/>
+
+        <Button
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:text="@string/cities"
             android:onClick="setFoodMode"/>
     </LinearLayout>
 
