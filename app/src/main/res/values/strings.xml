@@ -152,4 +152,10 @@
     <string name="kebab">Kebab</string>
     <string name="yogurt">Yogurt</string>
 
+    <string-array name="cities">
+        <item name="iran">@string/iran</item>
+    </string-array>
+
+    <string name="iran">Iran</string>
+
 </resources>

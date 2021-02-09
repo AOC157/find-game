@@ -16,6 +16,7 @@ public class RunActivity extends AppCompatActivity {
     public static final int NUMBER_OF_PLACES = 24;    
     public static final int NUMBER_OF_FOODS = 19;
     public static final int NUMBER_OF_THINGS = 14;
+    public static final int NUMBER_OF_CITIES = 1;
 
     public static int playerNumber;
     public static int spyNumber;
@@ -54,8 +55,17 @@ public class RunActivity extends AppCompatActivity {
             case "place":
                 answer = setPlace();
                 break;
+            case "city":
+                answer = setCity();
+                break;
         }
         return answer;
+    }
+
+    private String setCity() {
+        Random random = new Random();
+        int cityIndex = random.nextInt(NUMBER_OF_CITIES);
+        return getResources().getStringArray(R.array.cities)[cityIndex];
     }
 
     private String setThing() {
