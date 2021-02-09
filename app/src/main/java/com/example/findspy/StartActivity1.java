@@ -46,6 +46,9 @@ public class StartActivity1 extends AppCompatActivity {
                 return;
             case "place":
                 answers.setText(R.string.places);
+                return;
+            case "city":
+                answers.setText(R.string.cities);
         }
     }
 
