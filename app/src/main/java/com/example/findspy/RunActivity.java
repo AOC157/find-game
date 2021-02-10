@@ -16,7 +16,7 @@ public class RunActivity extends AppCompatActivity {
     public static final int NUMBER_OF_PLACES = 24;    
     public static final int NUMBER_OF_FOODS = 19;
     public static final int NUMBER_OF_THINGS = 14;
-    public static final int NUMBER_OF_CITIES = 1;
+    public static final int NUMBER_OF_CITIES = 30;
 
     public static int playerNumber;
     public static int spyNumber;

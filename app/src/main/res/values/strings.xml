@@ -154,8 +154,66 @@
 
     <string-array name="cities">
         <item name="iran">@string/iran</item>
+        <item name="usa">@string/usa</item>
+        <item name="england">@string/england</item>
+        <item name="france">@string/france</item>
+        <item name="brazil">@string/brazil</item>
+        <item name="spain">@string/spain</item>
+        <item name="argentina">@string/argentina</item>
+        <item name="russia">@string/russia</item>
+        <item name="australia">@string/australia</item>
+        <item name="canada">@string/canada</item>
+        <item name="china">c@string/china</item>
+        <item name="germany">@string/germany</item>
+        <item name="india">@string/india</item>
+        <item name="italy">@string/italy</item>
+        <item name="japan">@string/japan</item>
+        <item name="south_korea">@string/south_korea</item>
+        <item name="netherlands">@string/netherlands</item>
+        <item name="qatar">@string/qatar</item>
+        <item name="portugal">@string/portugal</item>
+        <item name="tehran">@string/tehran</item>
+        <item name="washington">@string/washington</item>
+        <item name="london">@string/london</item>
+        <item name="paris">@string/paris</item>
+        <item name="madrid">@string/madrid</item>
+        <item name="moscow">@string/moscow</item>
+        <item name="rome">@string/rome</item>
+        <item name="berlin">@string/berlin</item>
+        <item name="dubai">@string/dubai</item>
+        <item name="newYork">@string/newYork</item>
+        <item name="manchester">@string/manchester</item>
     </string-array>
 
     <string name="iran">Iran</string>
+    <string name="usa">USA</string>
+    <string name="england">England</string>
+    <string name="france">France</string>
+    <string name="brazil">Brazil</string>
+    <string name="spain">Spain</string>
+    <string name="argentina">Argentina</string>
+    <string name="russia">Russia</string>
+    <string name="australia">Australia</string>
+    <string name="canada">Canada</string>
+    <string name="china">China</string>
+    <string name="germany">Germany</string>
+    <string name="india">India</string>
+    <string name="italy">Italy</string>
+    <string name="japan">Japan</string>
+    <string name="south_korea">South-Korea</string>
+    <string name="netherlands">Netherlands</string>
+    <string name="qatar">Qatar</string>
+    <string name="portugal">Portugal</string>
+    <string name="tehran">Tehran</string>
+    <string name="washington">Washington</string>
+    <string name="london">London</string>
+    <string name="paris">Paris</string>
+    <string name="madrid">Madrid</string>
+    <string name="moscow">Moscow</string>
+    <string name="rome">Rome</string>
+    <string name="berlin">Berlin</string>
+    <string name="dubai">Dubai</string>
+    <string name="newYork">New York</string>
+    <string name="manchester">Manchester</string>
 
 </resources>
