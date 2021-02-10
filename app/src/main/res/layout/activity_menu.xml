@@ -13,21 +13,58 @@
         android:layout_weight="1.0"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/place"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
             android:layout_weight="1.0"
-            android:onClick="setPlaceMode"
-            android:text="@string/places"/>
+            android:background="@drawable/place2"
+            android:gravity="end"
+            android:onClick="setPlaceMode">
 
-        <Button
-            android:id="@+id/thing"
+            <LinearLayout
+                android:layout_width="122dp"
+                android:layout_height="190dp"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="@string/places"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
             android:layout_weight="1.0"
-            android:text="@string/things"
-            android:onClick="setThingMode"/>
+            android:background="@drawable/thing1"
+            android:gravity="end"
+            android:onClick="setThingMode">
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="105dp"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/thing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="@string/things"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -36,22 +73,58 @@
         android:layout_weight="1.0"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/food"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
             android:layout_weight="1.0"
-            android:text="@string/foods"
-            android:onClick="setFoodMode"/>
+            android:background="@drawable/food2"
+            android:gravity="end"
+            android:onClick="setFoodMode">
 
-        <Button
-            android:id="@+id/city"
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="@string/foods"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
             android:layout_weight="1.0"
-            android:text="@string/cities"
-            android:onClick="setCityMode"/>
+            android:background="@drawable/city2"
+            android:gravity="end"
+            android:onClick="setCityMode">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="180dp"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="@string/cities"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
     </LinearLayout>
-
 
 </LinearLayout>
