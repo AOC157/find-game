@@ -5,11 +5,11 @@
     <string name="spy">جاسوس</string>
     <string name="start">شروع</string>
     <string name="places">مکان ها</string>
-    <string name="foods">غذا ها</string>
+    <string name="foods">غذا ها و نوشیدنی</string>
     <string name="things">اشیاء</string>
     <string name="place">مکان</string>
     <string name="thing">شئ</string>
-    <string name="food">غذا</string>
+    <string name="food">غذا و نوشیدنی</string>
     <string name="role">برای دیدن نقش ضربه بزنید</string>
     <string name="hide">برای ناپدید شدن ضربه بزنید</string>
     <string name="finish">پایان!</string>
